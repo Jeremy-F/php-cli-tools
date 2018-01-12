@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: jeremyfornarino
- * Date: 12/01/2018
- * Time: 16:55
- */
+
+use Jeremyfornarino\phpCliTools\Cli\Option;
 
 class RunBandFrequency extends \Jeremyfornarino\phpCliTools\Cli\Command {
 
