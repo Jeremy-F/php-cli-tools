@@ -18,7 +18,7 @@ class RunBandFrequency extends \Jeremyfornarino\phpCliTools\Cli\Command {
      */
     public function execute(){
         $signalAnalyzer = new \Jeremyfornarino\Ksac\SignalAnalyzer\SignalAnalyzer(
-            $this->getOptionsByName("filePath")->getValue()
+            $this->getOptionsByName("hostname")->getValue()
         );
         $bandDB = new \Jeremyfornarino\Band\BandFrequencyDB(
             $this->getOptionsByName("filePath")->getValue()
