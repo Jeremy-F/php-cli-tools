@@ -1,0 +1,34 @@
+{
+    "name": "jeremy-f/php-cli-tools",
+    "version"  : "0.0.1",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/Jeremy-F/band-frequency-db",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Jeremy-F/keysight-sa-controller.git",
+            "type": "git"
+        }
+    ],
+    "authors": [
+        {
+            "name": "jeremy-f",
+            "email": "jeremy.fornarino@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Jeremyfornarino\\phpCliTools\\Cli\\" : "src/Jeremyfornarino/php-cli-tools/Cli"
+        }
+    },
+    "require": {
+        "php": ">=7",
+        "jeremy-f/keysight-sa-controller":"master",
+        "jeremy-f/band-frequency-db":"master"
+    },
+    "minimum-stability" : "dev"
+}
