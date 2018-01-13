@@ -28,7 +28,7 @@
     "require": {
         "php": ">=7",
         "jeremy-f/keysight-sa-controller":"master",
-        "jeremy-f/band-frequency-db":"master"
+        "jeremy-f/band-frequency-db":">=0.0.3"
     },
     "minimum-stability" : "dev"
 }

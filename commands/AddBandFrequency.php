@@ -10,12 +10,12 @@ class AddBandFrequency extends Command
     {
         parent::__construct($arguments);
         $this->setOptions([
-            new Option("filePath", "f", "Lien vers le fichier de la base de données", "", "bandDatabase.json"),
-            new Option("bandName", "n", "Nom de la bande (pas d'espace, ni d'accents)"),
-            new Option("freqStart", "s", "Frequence depart (Mhz)"),
-            new Option("freqStop", "t", "Frequence fin (Mhz)"),
-            new Option("rbw", "r", "RBW (Khz)"),
-            new Option("points", "p", "Points"),
+            new Option("filePath", "f", "Lien vers le fichier de la base de données (Alphanumerique + \/)", "^([A-z0-9\/]+).json$", "bandDatabase.json"),
+            new Option("bandName", "n", "Nom de la bande (Alphanumerique)", "^([A-z0-9]+)$"),
+            new Option("freqStart", "s", "Frequence depart (Mhz)", "^([0-9]+)$"),
+            new Option("freqStop", "t", "Frequence fin (Mhz)", "^([0-9]+)$"),
+            new Option("rbw", "r", "RBW (Khz)", "^([0-9]+)$"),
+            new Option("points", "p", "Points", "^([0-9]+)$"),
         ]);
     }
     public function execute()
@@ -24,6 +24,7 @@ class AddBandFrequency extends Command
         $bandDB = new \Jeremyfornarino\Band\BandFrequencyDB(
             $this->getOptionsByName("filePath")->getValue()
         );
+        $bandDB->loadDatabase();
         $band = new BandFrequency(
             $this->getOptionsByName("bandName")->getValue(),
             $this->getOptionsByName("freqStart")->getValue(),

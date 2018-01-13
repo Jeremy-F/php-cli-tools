@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3975b33758fb7c67b3e39f4224fb8ff8",
+    "content-hash": "265d1e59e8c845428ad526371bd9d6e8",
     "packages": [
         {
             "name": "jeremy-f/band-frequency-db",
@@ -41,7 +41,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeremy-F/keysight-sa-controller.git",
-                "reference": "ccf02808f19e8c0988d78c4548fab0c8350dbe09"
+                "reference": "bce64eb5464ebf6d1504c2fd997d9589bb1845f7"
             },
             "require": {
                 "php": ">=7"
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "This php library allows you to remotely control a Keysight signal analyzer",
-            "time": "2018-01-12 11:57:13"
+            "time": "2018-01-13 12:57:29"
         }
     ],
     "packages-dev": [
