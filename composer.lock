@@ -12,10 +12,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeremy-F/band-frequency-db",
-                "reference": "d8a790b9e46d204dfaa72cf1311ef77d92c7cb35"
+                "reference": "ae002037f787f93635109e95445c69019be02576"
             },
             "require": {
-                "jeremy-f/keysight-sa-controller": "*",
+                "jeremy-f/keysight-sa-controller": "master",
                 "php": ">=7"
             },
             "require-dev": {
@@ -33,7 +33,7 @@
                     "email": "jeremy.fornarino@gmail.com"
                 }
             ],
-            "time": "2018-01-12 12:31:30"
+            "time": "2018-01-13 14:08:05"
         },
         {
             "name": "jeremy-f/keysight-sa-controller",
